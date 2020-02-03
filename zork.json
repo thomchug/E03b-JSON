@@ -159,7 +159,7 @@
 		"name": "Forest",
 		"desc": "This is a dimly lit forest, with large trees all around.  One\nparticularly large tree with some low branches stands here.",
 		"exits": [{
-			"exit": "UP",
+			"exit": "DOWN",
 			"target": "TREE"
 		}, {
 			"exit": "NORTH",
@@ -529,7 +529,7 @@
 	},
 	"MGRAT": {
 		"name": "Grating Room",
-		"desc": "",
+		"desc": "If you stay here much longer, you will be eaten by a Grue",
 		"exits": [{
 			"exit": "SW",
 			"target": "MAZ11"
@@ -789,7 +789,11 @@
 			"exit": "EAST",
 			"target": "CRAW1"
 		}],
-		"items": []
+		"items": [{
+			"item": "MUMMY",
+			"desc": "An ancient mummy is sprawled on the floor",
+			"take": "You stuff the mummy in to your sack"
+		}]
 	},
 	"ICY": {
 		"name": "Glacier Room",
@@ -887,6 +891,9 @@
 		}, {
 			"exit": "EAST",
 			"target": "CAVE2"
+		}, {
+			"exit": "NORTH",
+			"target": "MIRR1"
 		}],
 		"items": []
 	},
@@ -1072,7 +1079,7 @@
 	},
 	"DEAD7": {
 		"name": "Dead End",
-		"desc": "Dead End",
+		"desc": "You have reached a dead end",
 		"exits": [{
 			"exit": "SOUTH",
 			"target": "BLADD"
@@ -1117,7 +1124,7 @@
 	},
 	"BATS": {
 		"name": "Bat Room",
-		"desc": "",
+		"desc": "This is a cave full of bats. They are currently sleeping",
 		"exits": [{
 			"exit": "EAST",
 			"target": "SQUEE"
@@ -1245,7 +1252,10 @@
 			"exit": "SOUTH",
 			"target": "MINE6"
 		}],
-		"items": []
+		"items": [{
+			"item": "SIGN",
+			"desc": "A sign is here that points down"
+		}]
 	},
 	"DOME": {
 		"name": "Dome Room",
@@ -1681,7 +1691,7 @@
 	},
 	"FCHMP": {
 		"name": "Moby lossage",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
@@ -2055,7 +2065,7 @@
 		"name": "Bank Entrance",
 		"desc": "This is the large entrance hall of the Bank of Zork, the largest\nbanking institution of the Great Underground Empire. A partial\naccount of its history is in 'The Lives of the Twelve Flatheads' with\nthe chapter on J. Pierpont Flathead.  A more detailed history (albeit\nless objective) may be found in Flathead's outrageous autobiography\n'I'm Rich and You Aren't - So There!'.\nMost of the furniture has been ravaged by passing scavengers.  All\nthat remains are two signs at the Northwest and Northeast corners of\nthe room, which say\n  \n      <--  WEST VIEWING ROOM        EAST VIEWING ROOM  -->  \n",
 		"exits": [{
-			"exit": "NW",
+			"exit": "NW", 
 			"target": "BKTW"
 		}, {
 			"exit": "NE",
@@ -2063,6 +2073,9 @@
 		}, {
 			"exit": "SOUTH",
 			"target": "GALLE"
+		}, {
+			"exit": "ROB",
+			"target": "BKVAU"
 		}],
 		"items": []
 	},
@@ -2178,7 +2191,7 @@
 		"items": []
 	},
 	"CP": {
-		"name": "Room in a Puzzle",
+		"name": "Just a room (not at all suspicious)",
 		"desc": "",
 		"exits": [{
 			"exit": "NORTH",
@@ -2434,25 +2447,25 @@
 	},
 	"MRDE": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
 	"MRDW": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
 	"MRGE": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
 	"MRGW": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
@@ -2791,7 +2804,7 @@
 	},
 	"PCELL": {
 		"name": "Prison Cell",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
